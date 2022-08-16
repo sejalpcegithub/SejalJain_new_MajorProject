@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+<title>Machine Learning  Sentimental Analysis Model Deployment</title>
+<meta charset="UTF-8">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+<style><!DOCTYPE html>
+
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+<img src="static/image/PIET logo with tagline.jpg"  width="1200" height="100">
+</head>
+
+<body>
+      
+<div class="" style="background-color:blue;" >
+<div class="clearfix">
+           
+<div class="col-md-12">
+<center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
+<center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
+<center><p style="font-size:25px;color:white;margin-top:10px;">Summer Internship 2022 on Machine learning and Data Science</p></center> 
+</div>
+</div>
+</div>
+
+<div class="login">
+<h2 >Natural Language Preprocessing </h2>
+
+<!-- Main Input For Receiving Query to our ML -->
+<form action="{{ url_for('index4')}}"method="get">
+
+<h2>Topic for Project is "Sentimental Analysis of Twitter Dataset: Tesla"</h2>
+<br>
+<div class="form-floating mb-3">
+<input type="text" class="form-control" id="name" name="name" step="any"  placeholder="0" required="required">
+<label for="floatingInput">Enter your name</label>
+</div>
+
+<div class="form-floating mb-3">
+<input type="text" class="form-control" id="exp" name="exp" step="any"  placeholder="0" required="required">
+<label for="floatingInput">Write text for analysis</label>
+</div>
+
+<div>
+<button type="submit" class="btn btn-primary btn-block btn-large">  Decision tree prediction  </button>
+
+
+</div>
+<br>
+</form>
+
+<br>
+{{ prediction_text }}
+</div>
+<br>
+<div class="" style="background-color:blue;" >
+<div class="clearfix">
+</div>
+</div>
+</body>
+<div class="container" >
+   <style>
+       .GFG {
+           background-color:blue;
+           border: 2px solid black;
+           color: white;
+           padding: 5px 10px;
+           text-align: center;
+           display: inline-block;
+           font-size: 20px;
+           margin: 5px 30px;
+           cursor: pointer;
+       }
+   </style>
+   <button class="GFG" 
+   onclick="window.location.href = '/';">
+       Visit Home Page
+   </button>
+   <button class="GFG"
+   onclick="window.location.href = '/index2';">
+        NLP Description
+   </button>
+   <button class="GFG" 
+   onclick="window.location.href = '/index3';">
+        Model Description
+   </button> 
+   <button class="GFG" 
+  onclick="window.location.href = '/aboutus';">
+      About Internship
+   </button>
+   <button class="GFG" 
+  onclick="window.location.href = '/MiniProjects';">
+      About Mini Projects
+   </button>
+ </div>
+ <br>
+ <br>
+ <div class="fixed-bottom ">
+        <div class="bg-secondary " style="min-height: 50px;">
+
+            <marquee style="background-color:blue;color:white; margin-top: 7px;">
+                <h9>Designed and Developed by SEJAL JAIN, Student, 2nd Year, Poornima College of Engineering, Department of Computer Engineering</h9>
+            </marquee>
+        
+        </div>
+    </div> 
+</html>
